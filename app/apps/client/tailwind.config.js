@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.svelte"],
-  darkMode: "class",
+  content: ['./index.html', './src/**/*.svelte'],
+  darkMode: 'class',
   theme: {
     extend: {},
     fontFamily: {
-      body: ["Montserrat", "sans-serif"],
+      body: ['Montserrat', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
