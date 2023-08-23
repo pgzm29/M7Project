@@ -8,7 +8,7 @@ app = Flask(__name__, static_folder='../client/dist', static_url_path="/")
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Load the trained model
-model_path = '../../../datascience/pneumonia_detection_model_tuning.h5'
+model_path = './pneumonia_detection_model_tuning.h5'
 model = tf.keras.models.load_model(model_path)
 
 
