@@ -1,5 +1,7 @@
 import axios, { type AxiosInstance } from 'axios';
 
+const URL = import.meta.env.VITE_API_URL || '';
+
 class AxiosClient {
   private static instance: AxiosInstance | null = null;
 
@@ -10,7 +12,7 @@ class AxiosClient {
   public static getInstance(): AxiosInstance {
     if (!AxiosClient.instance) {
       AxiosClient.instance = axios.create({
-        baseURL: `${import.meta.env.VITE_API_URL}/api`,
+        baseURL: `${URL}/api`,
       });
     }
 
