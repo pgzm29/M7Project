@@ -7,6 +7,10 @@ Este proyecto es un monorepo hecho con Turbo, el cual contiene el código del en
 ### Archivos relevantes
 
 1. [M7_Project.ipynb (Modelo de Entrenamiento)](datascience/M7_Project.ipynb)
-2. [Modelo de Entrenamiento con Tuning](datascience/pneumonia_detection_model_tuning.h5)
+2. [Modelo de Entrenamiento con Tuning](app/apps/server/pneumonia_detection_model_tuning.h5)
 3. [App.py (API)](app/apps/server/app.py)
 4. [Predict.svelte (Client)](app/apps/client/src/lib/Predict.svelte)
+
+## Deploy
+
+La aplicación se desplegó con Docker en Google Cloud. Se puede acceder [aquí](https://m7api-dxkxrwg5lq-uc.a.run.app)
